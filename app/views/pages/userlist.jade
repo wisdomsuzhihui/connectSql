@@ -1,0 +1,27 @@
+extends ../layout
+
+block content
+    .container
+        .row
+            table.table.table-hover.table-bordered
+                thead
+                    tr
+                        th 名字
+                        th 时间
+                        th 手机
+                        th 邮箱
+                        //- th 删除
+                tbody
+                each item in users
+                    tr
+                        td #{item.dataValues.Account}
+                        td #{item.dataValues.PostDate}
+                        td #{item.dataValues.Phone}
+                        td #{item.dataValues.Email}
+                    //- each item in users
+                    //- tr
+                    //-     td
+                        //- td #{item.dataValues.Account}
+                        //- td #{moment(item.dataValues.PostDate).format('MM/DD/YYYY MM:HH')}
+
+            
