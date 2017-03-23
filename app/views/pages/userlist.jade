@@ -15,7 +15,7 @@ block content
                 each item in users
                     tr
                         td #{item.dataValues.Account}
-                        td #{item.dataValues.PostDate}
+                        td #{moment(item.dataValues.PostDate).format('YYYY-MM-DD HH:mm')}
                         td #{item.dataValues.Phone}
                         td #{item.dataValues.Email}
                     //- each item in users
